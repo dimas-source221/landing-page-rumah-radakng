@@ -193,7 +193,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1587595431973-160d0c25d037?w=1920&h=1080&fit=crop');
+    background-image: url('https://drive.google.com/file/d/1r2-hYBEaEG2bQxoFRVDB_9MDDQEmTWo9/view?usp=sharing');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -636,6 +636,17 @@ ul {
     line-height: 1.6;
 }
 
+/* Sidebar Note - Catatan kecil untuk jam kunjungan */
+.sidebar-note {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    font-style: italic;
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px dashed var(--color-gold);
+    line-height: 1.5;
+}
+
 .tips-list {
     margin-top: var(--spacing-sm);
 }
@@ -874,6 +885,22 @@ ul {
     
     .modal-image {
         height: 250px;
+    }
+    
+    /* ============================================
+       PERBAIKAN RESPONSIVITAS TEKS MOBILE
+       Mengubah text-align dari justify ke left
+       agar teks tidak stretchy di layar kecil
+       ============================================ */
+    .about-text,
+    .filosofi-text,
+    .info-intro,
+    .sidebar-text,
+    .sidebar-note,
+    .modal-desc,
+    .footer-text,
+    .footer-address {
+        text-align: left;
     }
 }
 
