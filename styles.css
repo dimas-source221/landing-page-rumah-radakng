@@ -952,3 +952,12 @@ ul {
         color: black;
     }
 }
+
+aside img {
+    max-width: 200px; /* Mengecilkan ukuran gambar */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuatnya jadi bulat estetik */
+    display: block;
+    margin: 0 auto 15px auto; /* Memastikan posisinya di tengah */
+}
